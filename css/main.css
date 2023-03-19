@@ -1,0 +1,93 @@
+body{
+   background-color: #141414;
+   color: white;
+}
+.lib{
+	max-width: 840px !important;
+    font-size: 16px;
+    font-family: Helvetica;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+}
+.editor{
+}
+
+#toggle-button {
+        background-color: #333331;
+        border: none;
+        color: #ffffff;
+        padding: 12px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Стили для фокуса кнопки */
+      #toggle-button:focus {
+        outline: none;
+        background-color: #141414;
+        box-shadow: 0 0 0 2px #4CAF50;
+      }
+
+      /* Стили для наведения на кнопку */
+      #toggle-button:hover {
+        background-color: #141414;
+      }
+
+.hidden {
+        display: none;
+      }
+p{
+	padding: 0 15px;
+	margin: 0 0 10px;
+    word-wrap: break-word;
+}
+img{
+	max-width: 100%;
+	border-style: none;
+}
+
+#status-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+
+
+      .input-field {
+        padding: 12px 20px;
+        border: 2px solid #40414f;
+        border-radius: 8px;
+        font-size: 18px;
+        background-color: #141414;
+        color: #f8f8f8;
+        width: 100%;
+        box-sizing: border-box;
+        resize: vertical;
+        min-height: 400px;
+        font-family: Arial, sans-serif;
+      }
+      
+      /* Стили для фокуса поля ввода */
+      .input-field:focus {
+        border-color: #4CAF50;
+        outline: none;
+      }
+@media only screen and (min-width: 400px) {
+//phone
+}
+
+@media only screen and (min-width: 768px) {
+//pc
+}
