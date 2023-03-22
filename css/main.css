@@ -84,10 +84,21 @@ img{
         border-color: #4CAF50;
         outline: none;
       }
-@media only screen and (min-width: 400px) {
-//phone
-}
+@media only screen and (max-width: 767px) {
+  .lib {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+  }
 
-@media only screen and (min-width: 768px) {
-//pc
+  p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .input-field {
+    font-size: 16px;
+    min-height: 200px;
+    padding: 10px;
+  }
 }
