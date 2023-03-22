@@ -84,7 +84,7 @@ img{
         border-color: #4CAF50;
         outline: none;
       }
-@media only screen and (max-width: 767px) {
+@media (max-width: 768px){
   .lib {
     padding-top: 15px;
     padding-bottom: 15px;
