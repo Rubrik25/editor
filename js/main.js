@@ -10,17 +10,16 @@ $(document).ready(function() {
         
       });
 function parser(inputed) {
-    inputed = inputed.split("\n");
-    inputed = inputed.map(i => {
-        if (i.trim() !== '') {
-            i = `<p>${i}</p>`;
-            i = i.replace('[[checkbox]]', '<input type="checkbox">');
-        } else {
-            i = '&nbsp;';
-        }
-        return i;
-    });
-    inputed = inputed.join('');
-    return inputed;
+  inputed = inputed.split("\n");
+  inputed = inputed.map(i => {
+    if (i.trim() !== "") {
+      return `<p>${i}</p>`;
+    } else {
+      return "&nbsp;";
+    }
+  });
+  inputed = inputed.map(i => i.replace("[[checkbox]]", '<input type="checkbox">'));
+  inputed = inputed.join("");
+  return inputed;
 }
 
