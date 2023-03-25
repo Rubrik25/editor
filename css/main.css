@@ -2,6 +2,9 @@ body{
    background-color: #141414;
    color: white;
 }
+input[type="checkbox"] {
+scale: 130%
+}
 .lib{
 	max-width: 840px !important;
     font-size: 16px;
