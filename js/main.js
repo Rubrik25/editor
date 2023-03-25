@@ -27,7 +27,9 @@ const parser = inputed => {
       return "&nbsp;";
     }
   });
-  parsed = parsed.map(i => i.replace("[[checkbox]]", '<input type="checkbox">'));
+  for (let i = 0; i < parsed.length; i++) {
+  parsed[i] = parsed[i].replace(/\[\[checkbox\]\]/g, '<input type="checkbox">');
+  }
   parsed = parsed.join("");
   return parsed;
 };
