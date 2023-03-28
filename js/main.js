@@ -28,8 +28,14 @@ const parser = inputed => {
     }
   });
   for (let i = 0; i < parsed.length; i++) {
-  parsed[i] = parsed[i].replace(/\[\[checkbox\]\]/g, '<input type="checkbox">');
+    // Заменяем [[checkbox]] на HTML-код чекбокса
+    parsed[i] = parsed[i].replace(/\[\[checkbox\]\]/g, '<input type="checkbox">');
+
+    // Создаем спойлеры
+    parsed[i] = parsed[i].replace(/\[\[spoiler=(.*?)\]\](.*?)\[\[spoiler\]\]/g, 
+      '<details><summary>$1</summary><p>$2</p></details>');
   }
   parsed = parsed.join("");
   return parsed;
 };
+
