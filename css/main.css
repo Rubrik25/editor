@@ -1,107 +1,118 @@
-body{
-   background-color: #141414;
-   color: white;
+/* CSS-файл */
+
+/* Основные стили */
+body {
+background-color: #141414;
+color: #fff;
 }
+
+.lib {
+max-width: 840px !important;
+font-size: 16px;
+font-family: Helvetica, sans-serif;
+line-height: 1.6;
+margin: 0 auto;
+padding-top: 25px;
+padding-bottom: 50px;
+box-sizing: border-box;
+}
+
+.editor {
+}
+
 input[type="checkbox"] {
-scale: 140%
-}
-.lib{
-	max-width: 840px !important;
-    font-size: 16px;
-    font-family: Helvetica;
-    line-height: 1.6;
-    margin: 0 auto;
-    padding-top: 25px;
-    padding-bottom: 50px;
-    box-sizing: border-box;
-}
-.editor{
+transform: scale(1.4);
 }
 
+p {
+padding: 0 15px;
+margin: 0 0 10px;
+word-wrap: break-word;
+}
+
+img {
+max-width: 100%;
+border-style: none;
+}
+
+/* Кнопки */
 .buttons {
-        background-color: #333331;
-        border: none;
-        color: #ffffff;
-        padding: 12px 24px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 8px;
-        cursor: pointer;
-        font-family: Arial, sans-serif;
-      }
+background-color: #333331;
+border: none;
+color: #fff;
+padding: 12px 24px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius: 8px;
+cursor: pointer;
+font-family: Arial, sans-serif;
+}
 
-      /* Стили для фокуса кнопки */
-      .buttons:focus {
-        outline: none;
-        background-color: #141414;
-        box-shadow: 0 0 0 2px #4CAF50;
-      }
+.buttons:focus {
+outline: none;
+background-color: #141414;
+box-shadow: 0 0 0 2px #4CAF50;
+}
 
-      /* Стили для наведения на кнопку */
-      .buttons:hover {
-        background-color: #141414;
-      }
+.buttons:hover {
+background-color: #141414;
+}
 
+/* Скрытые элементы */
 .hidden {
-        display: none;
-      }
-p{
-	padding: 0 15px;
-	margin: 0 0 10px;
-    word-wrap: break-word;
-}
-img{
-	max-width: 100%;
-	border-style: none;
+display: none;
 }
 
+/* Панель состояния */
 #status-bar {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-      }
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: #333;
+color: #fff;
+padding: 10px;
+}
 
+/* Поле ввода */
+.input-field {
+padding: 12px 20px;
+border: 2px solid #40414f;
+border-radius: 8px;
+font-size: 18px;
+background-color: #141414;
+color: #f8f8f8;
+width: 100%;
+box-sizing: border-box;
+resize: vertical;
+min-height: 400px;
+font-family: Arial, sans-serif;
+}
 
-      .input-field {
-        padding: 12px 20px;
-        border: 2px solid #40414f;
-        border-radius: 8px;
-        font-size: 18px;
-        background-color: #141414;
-        color: #f8f8f8;
-        width: 100%;
-        box-sizing: border-box;
-        resize: vertical;
-        min-height: 400px;
-        font-family: Arial, sans-serif;
-      }
-      
-      /* Стили для фокуса поля ввода */
-      .input-field:focus {
-        border-color: #4CAF50;
-        outline: none;
-      }
+.input-field:focus {
+border-color: #4CAF50;
+outline: none;
+}
+
+/* Адаптивность */
 @media only screen and (max-width: 767px) {
-  .lib {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 14px;
-  }
+.lib {
+padding-top: 15px;
+padding-bottom: 15px;
+font-size: 14px;
+}
 
-  p {
+p {
     font-size: 16px;
     margin: 0;
-  }
+}
 
-  .input-field {
+.input-field {
     font-size: 18px;
     min-height: 800px;
     padding: 10px;
-  }
+}
+
 }
