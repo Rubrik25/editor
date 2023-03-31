@@ -17,6 +17,26 @@
     </div>
     <div class="lib">
     </div>
+    <div id="settings">
+  <label>Цветовая тема:</label>
+  <input type="color" id="color-theme">
+  
+  <label>Отступ:</label>
+  <input type="number" id="padding" min="0" max="100" step="1" value="10">
+  
+  <label>Размер шрифта:</label>
+  <input type="number" id="font-size" min="10" max="36" step="1" value="16">
+  
+  <label>Высота строк:</label>
+  <input type="number" id="line-height" min="1" max="2.5" step="0.1" value="1.5">
+  
+  <label>Ширина контейнера:</label>
+  <input type="number" id="container-width" min="200" max="800" step="10" value="600">
+  
+  <label>Отступ между абзацами:</label>
+  <input type="number" id="paragraph-spacing" min="0" max="50" step="1" value="10">
+</div>
+
     <div id="status-bar">
       <button id="toggle-button" class="buttons">Редактор</button>
       <button id="settings" class="buttons">Настройки</button>
