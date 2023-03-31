@@ -18,7 +18,7 @@ scale: 140%
 .editor{
 }
 
-#buttons {
+.buttons {
         background-color: #333331;
         border: none;
         color: #ffffff;
@@ -33,14 +33,14 @@ scale: 140%
       }
 
       /* Стили для фокуса кнопки */
-      #toggle-button:focus {
+      .buttons:focus {
         outline: none;
         background-color: #141414;
         box-shadow: 0 0 0 2px #4CAF50;
       }
 
       /* Стили для наведения на кнопку */
-      #toggle-button:hover {
+      .buttons:hover {
         background-color: #141414;
       }
 
