@@ -1,13 +1,25 @@
 // Готовность документа
 $(document).ready(() => {
   // Сохраняем ссылки на элементы jQuery в переменные
-  const $toggleButton = $("#toggle-button");
+  const $editorButton = $("#editor-button");
+  const $settingsButton
   const $inputField = $("#input-field");
+  
+  const $editor = $(".editor");
   const $lib = $(".lib");
-  const $editorLibToggle = $(".editor,.lib");
+  const $settings = $(".settings");
+  
+  
+  
+  const $colorTheme = $("#color-theme");
+  const $padding = $("#padding");
+  const $fontSize = $("#font-size");
+  const $lineHeight = $("#line-height");
+  const $containerWidth = $("#container-width");
+  const $paragraphSpacing = $("#paragraph-spacing");
   
   // При нажатии на кнопку
-  $toggleButton.click(() => {
+  $editorButton.click(() => {
     // Парсим введенный текст
     const parsed = parser($inputField.val());
     // Записываем результат в элемент с классом "lib"
