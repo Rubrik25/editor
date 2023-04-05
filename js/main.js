@@ -19,7 +19,7 @@ $(document).ready(() => {
   const $paragraphSpacing = $("#paragraph-spacing");
   
 // Нажатие на кнопку "Назад"
-  $backButton.click(function() {
+  $backButton.onclick(function() {
     $settings.addClass("hidden");
     $editor.addClass("hidden");
     $lib.removeClass("hidden");
@@ -29,14 +29,14 @@ $(document).ready(() => {
   });
 
 // Нажатие на кнопку "Редактор"
-  $editorButton.click(function() {
+  $editorButton.onclick(function() {
     $settings.addClass("hidden");
     $lib.addClass("hidden");
     $editor.removeClass("hidden");
   });
 
 // Нажатие на кнопку "Настройки"
-  $settingsButton.click(function() {
+  $settingsButton.onclick(function() {
     $editor.addClass("hidden");
     $lib.addClass("hidden");
     $settings.removeClass("hidden");
