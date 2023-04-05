@@ -63,7 +63,7 @@ const parser = inputed => {
   }
   parsed = parsed.join("");
   return parsed;
-};
+};};
 
 const settingsCssReload = () => {
 
