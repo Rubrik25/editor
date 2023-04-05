@@ -2,15 +2,15 @@
 $(document).ready(() => {
   // Сохраняем ссылки на элементы jQuery в переменные
   const $editorButton = $("#editor-button");
-  const $settingsButton
-  const $inputField = $("#input-field");
+  const $settingsButton = $("#settings-button");
+  const $backButton = $("#back-button");
   
   const $editor = $(".editor");
   const $lib = $(".lib");
   const $settings = $(".settings");
   
-  
-  
+  const $inputField = $("#input-field");
+
   const $colorTheme = $("#color-theme");
   const $padding = $("#padding");
   const $fontSize = $("#font-size");
@@ -18,16 +18,30 @@ $(document).ready(() => {
   const $containerWidth = $("#container-width");
   const $paragraphSpacing = $("#paragraph-spacing");
   
-  // При нажатии на кнопку
-  $editorButton.click(() => {
-    // Парсим введенный текст
+// Нажатие на кнопку "Назад"
+  $backButton.on("click", function() {
+    $settings.addClass("hidden");
+    $editor.addClass("hidden");
+    $lib.removeClass("hidden");
     const parsed = parser($inputField.val());
-    // Записываем результат в элемент с классом "lib"
+    settingsCssReload();
     $lib.html(parsed);
-    // Переключение элементов
-    $editorLibToggle.toggleClass("hidden");
   });
-});
+
+// Нажатие на кнопку "Редактор"
+  $editorButton.on("click", function() {
+    $settings.addClass("hidden");
+    $lib.addClass("hidden");
+    $editor.removeClass("hidden");
+  });
+
+// Нажатие на кнопку "Настройки"
+  $settingsButton.on("click", function() {
+    $editor.addClass("hidden");
+    $lib.addClass("hidden");
+    $settings.removeClass("hidden");
+  });
+
 
 // Функция парсинга текста
 const parser = inputed => {
@@ -51,3 +65,6 @@ const parser = inputed => {
   return parsed;
 };
 
+const settingsCssReload = () => {
+
+}
