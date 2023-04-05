@@ -41,7 +41,7 @@ $(document).ready(() => {
     $lib.addClass("hidden");
     $settings.removeClass("hidden");
   });
-
+};
 
 // Функция парсинга текста
 const parser = inputed => {
@@ -63,7 +63,7 @@ const parser = inputed => {
   }
   parsed = parsed.join("");
   return parsed;
-};};
+};
 
 const settingsCssReload = () => {
 
