@@ -18,23 +18,33 @@
     <div class="lib">
     </div>
     <div class="settings hidden">
-    <label>Цветовая тема:</label>
-    <input type="color" id="color-theme">
+    <p>Цветовая тема:</p>
+    <div class="button-container">
+        <button style="background-color: #f2f2f3; color: #212529;">A</button>
+        <button style="background-color: #dce5e2; color: #27262b;">A</button>
+        <button style="background-color: #f5f1e5; color: #28282a;">A</button>
+        <button style="background-color: #e5cf9d; color: #262425;">A</button>
+        <button style="background-color: #434751; color: #dbdbdb;">A</button>
+        <button style="background-color: #141414; color: #dddddd;">A</button>
+    </div>
+
+
+    <input type="color" id="color"> <input type="color" id="background-color">
   
-    <label>Отступ:</label>
-    <input type="number" id="padding" min="0" max="100" step="1" value="10">
+    <p>Отступ:</p>
+    <input type="range" id="padding" min="0" max="100" step="1" value="10">
   
-    <label>Размер шрифта:</label>
-    <input type="number" id="font-size" min="14" max="36" step="1" value="20">
+    <p>Размер шрифта:</p>
+    <input type="range" id="font-size" min="14" max="36" step="1" value="20">
   
-    <label>Высота строк:</label>
-    <input type="number" id="line-height" min="1" max="2.4" step="0.1" value="1.4">
+    <p>Высота строк:</p>
+    <input type="range" id="line-height" min="1" max="2.4" step="0.1" value="1.4">
   
-    <label>Ширина контейнера:</label>
-    <input type="number" id="container-width" min="840" max="1268" step="10" value="840">
+    <p>Ширина контейнера:</p>
+    <input type="range" id="container-width" min="840" max="1268" step="10" value="840">
   
-    <label>Отступ между абзацами:</label>
-    <input type="number" id="paragraph-spacing" min="5" max="45" step="1" value="10">
+    <p>Отступ между абзацами:</p>
+    <input type="range" id="paragraph-spacing" min="5" max="45" step="1" value="10">
     </div>
 
     <div id="status-bar">
